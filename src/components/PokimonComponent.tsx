@@ -48,29 +48,29 @@ const PokimonComponent = () => {
     console.log(randomPokemon.moves.map((move: any) => move.move.name))
 
 
-    setDefaultImg(
-      randomPokemon.sprites.other["official-artwork"].front_default
+    // setDefaultImg(
+    //   randomPokemon.sprites.other["official-artwork"].front_default
       
-    );
+    // );
     
-    setCardShinnyImg(
-      randomPokemon.sprites.other["official-artwork"].front_shiny
-    );
+    // setCardShinnyImg(
+    //   randomPokemon.sprites.other["official-artwork"].front_shiny
+    // );
     setLocation(
       randomPokemon.location_area_encounters
     );
-    setAbilities(
-      randomPokemon.abilities.map((ability: any) => ability.ability.name);
-    );
-    setMoves(
-      randomPokemon.moves.map((move: any) => move.move.name)
-    );
-    setTypes(
-      randomPokemon.types.map((type: string) => type.type.name)
-    );
-    setEvolutionResponse(
-      randomPokemon.
-    );
+    // setAbilities(
+    //   randomPokemon.abilities.map((ability: string) => ability.ability.name)
+    //  );
+    // setMoves(
+    //   randomPokemon.moves.map((move: any) => move.move.name)
+    // );
+    // setTypes(
+    //   randomPokemon.types.map((type: string) => type.type.name)
+    // );
+    // setEvolutionResponse(
+    //   randomPokemon.
+    // );
 
     // Fetching additional data like evolutionary paths, location, moves, etc.
   };
@@ -82,12 +82,12 @@ const PokimonComponent = () => {
         alert("Please enter pokemon generations from 1-5 at this time.");
       } else {
         setPokemon(searchedPokemon);
-        setDefaultImg(
-          searchedPokemon.sprites.other["official-artwork"].front_default
-        );
-        setCardShinnyImg(
-          searchedPokemon.sprites.other["official-artwork"].front_shiny
-        );
+        // setDefaultImg(
+        //   searchedPokemon.sprites.other["official-artwork"].front_default
+        // );
+        // setCardShinnyImg(
+        //   searchedPokemon.sprites.other["official-artwork"].front_shiny
+        // );
 
         // Fetching additional data like evolutionary paths, location, moves, etc.
 

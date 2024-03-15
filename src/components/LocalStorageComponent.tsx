@@ -1,4 +1,3 @@
-import React from "react";
 
 const saveToLocalStorage = (pokemon: string) => {
     let favorites = getLocalStorage();
